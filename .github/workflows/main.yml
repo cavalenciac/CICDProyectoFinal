@@ -38,19 +38,19 @@ jobs:
 
       # Construccion de imagenes
       - name: Build image Articulo
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes1:articulo .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:articulo .
         working-directory: MicroserviceArticulo
         
       - name: Build image Externals
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes1:externals .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:externals .
         working-directory: MicroserviceExternals
         
       - name: Build image Eureka
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes1:eureka .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:eureka .
         working-directory: MicroServiceEureka
 
       - name: Build image Worker
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes1:worker .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:worker .
         working-directory: MicroserviceWorker
 
 
