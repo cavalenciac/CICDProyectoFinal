@@ -33,7 +33,7 @@ jobs:
         run: mvn -f MicroserviceExternals/pom.xml clean install -DskipTests=true
 
       - name: Build Micro Eureka
-        run: mvn -f MicroserviceEureka/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroServiceEureka/pom.xml clean install -DskipTests=true
 
 
       # Construccion de imagenes
