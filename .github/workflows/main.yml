@@ -65,7 +65,7 @@ jobs:
       #Envio de imagenes a docker hub
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/mes:client
-          docker push ${{ secrets.DOCKER_USERNAME }}/mes:config
+          docker push ${{ secrets.DOCKER_USERNAME }}/mes:articulo
+          docker push ${{ secrets.DOCKER_USERNAME }}/mes:externals
           docker push ${{ secrets.DOCKER_USERNAME }}/mes:eureka
-          docker push ${{ secrets.DOCKER_USERNAME }}/mes:item
+          docker push ${{ secrets.DOCKER_USERNAME }}/mes:worker
